@@ -1,0 +1,2 @@
+stan,Card_no,Terminal_id,Amount,Charge,Account_no,rrn,status,sheet_no
+006322,604981******5338,MKB00101,"130,000.00","1,300.00",10100528148,00,open,1
