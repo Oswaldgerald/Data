@@ -28,8 +28,7 @@
 <div class="wrapper ">
     <div class="sidebar" data-color="" data-background-color="black" data-image="{{asset('/assets/img/sidebar-1.jpg')}}" >
 
-        <div class="logo"><a href="#"><img src="{{asset('/assets/img/logo.jpg')}}" alt=""></a>
-
+        <div class="logo" style="margin-top:40px;margin-left: 60px;"><a href="{{'/'}}"><img src="{{asset('/assets/img/logo.jpg')}}" alt=""></a>
         </div>
 
 

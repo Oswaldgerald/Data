@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dfa10f8-e443-4baf-94b0-b76341b06cd6" name="Default Changelist" comment="" />
+    <list default="true" id="5dfa10f8-e443-4baf-94b0-b76341b06cd6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,11 +199,27 @@
       <workItem from="1623269186204" duration="4473000" />
       <workItem from="1623302879975" duration="11065000" />
       <workItem from="1623338474836" duration="11572000" />
-      <workItem from="1623570519061" duration="336000" />
+      <workItem from="1623570519061" duration="950000" />
+      <workItem from="1623571604809" duration="122000" />
+      <workItem from="1623571868616" duration="160000" />
+      <workItem from="1623572099112" duration="179000" />
+      <workItem from="1623572332442" duration="1645000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
