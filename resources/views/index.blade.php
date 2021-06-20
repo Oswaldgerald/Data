@@ -8,7 +8,7 @@
                         <div class="card card-stats">
                             <div class="card-header card-header-warning card-header-icon">
                                 <div class="card-icon">
-                                    <i class="material-icons">content_copy</i>
+                                    <i class="material-icons">upload</i>
                                 </div>
                                 <p class="card-category"></p>
                                 <h3 class="card-title">Upload
@@ -28,10 +28,10 @@
                         <div class="card card-stats">
                             <div class="card-header card-header-success card-header-icon">
                                 <div class="card-icon">
-                                    <i class="material-icons">subtitles</i>
+                                    <i class="material-icons">receipt</i>
                                 </div>
                                 <p class="card-category"></p>
-                                <h3 class="card-title">Transact</h3>
+                                <h3 class="card-title">Transaction</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">

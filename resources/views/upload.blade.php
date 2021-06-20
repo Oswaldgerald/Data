@@ -22,8 +22,8 @@
                                 <i class="material-icons">upload</i>
                                 <a class="btn btn-light disabled" href="">BCX FILE</a>
                                 <input type='file' name='file'>
-                                <input class="btn btn-primary" type='submit' name='submit' value='Import'>
-                                <a class="btn btn-info" href="{{ route('BCX-file-export') }}">Export data</a>
+                                <input class="btn btn-primary btn-sm" type='submit' name='submit' value='Import'>
+                                <a class="btn btn-success btn-sm" href="{{ route('BCX-file-export') }}">Reconcile</a>
                             </form>
                         </div>
                     </div>
@@ -34,11 +34,9 @@
                                 <i class="material-icons">upload</i>
                                 <a class="btn btn-light disabled" href="">GL FILE</a>
                                 <input type='file' name='file'>
-                                <input class="btn btn-primary" type='submit' name='submit' value='Import'>
-                                <a class="btn btn-info" href="{{ route('GL-file-export') }}">Export data</a>
+                                <input class="btn btn-primary btn-sm" type='submit' name='submit' value='Import'>
+{{--                                <a class="btn btn-info btn-sm" href="{{ route('GL-file-export') }}">Export data</a>--}}
                             </form>
-
-
                         </div>
 
 
@@ -46,7 +44,7 @@
                     <br>
 
                     <a href="{{'transactions'}}">
-                        <button class="btn btn-info" style="margin-left: 80%">Complete</button>
+                        <button class="btn btn-warning" style="margin-left: 80%">Complete</button>
                     </a>
 
                 </div>
