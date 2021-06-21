@@ -47,11 +47,10 @@
                                 100 | 400,000,000
 
                             </td>
-                            <td>
-                                10 | 400,000
+                            <td><button class="btn btn-outline-warning btn-sm">10</button>|<button class="btn btn-outline-success btn-sm">4,000,000 </button>
                             </td>
                             <td>
-                                8 | 60,000,000
+                                <button class="btn btn-outline-warning btn-sm">8 </button>|<button class="btn btn-outline-warning btn-sm">6,000,000 </button>
                             </td>
                             <td>
                                 <button class="btn btn-warning btn-sm">

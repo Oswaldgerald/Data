@@ -23,7 +23,7 @@
                                 <a class="btn btn-light disabled" href="">BCX FILE</a>
                                 <input type='file' name='file'>
                                 <input class="btn btn-primary btn-sm" type='submit' name='submit' value='Import'>
-                                <a class="btn btn-success btn-sm" href="{{ route('BCX-file-export') }}">Reconcile</a>
+                                <a class="btn btn-success btn-sm" href="{{ route('get-BCX') }}">Reconcile</a>
                             </form>
                         </div>
                     </div>

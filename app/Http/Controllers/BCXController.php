@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\BcxesImport;
 use App\Exports\BcxesExport;
@@ -11,7 +13,7 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 class BCXController extends Controller
 {
     /**
-    //     * @return \Illuminate\Support\Collection
+     * //     * @return \Illuminate\Support\Collection
      */
     public function BCX_fileImportExport()
     {
@@ -19,7 +21,7 @@ class BCXController extends Controller
     }
 
     /**
-    //     * @return \Illuminate\Support\Collection
+     * //     * @return \Illuminate\Support\Collection
      */
     public function BCX_fileImport(Request $request): RedirectResponse
     {
@@ -28,10 +30,16 @@ class BCXController extends Controller
     }
 
     /**
-    //     * @return \Illuminate\Support\Collection
+     * //     * @return \Illuminate\Support\Collection
      */
     public function BCX_fileExport(): BinaryFileResponse
     {
         return Excel::download(new BcxesExport(), 'BCX-collection.xlsx');
+    }
+
+    public function getBCXData()
+    {
+        $bcxes = DB::table('b_c_x_e_s')->get();
+        return view('upload', ['bcxes' => $bcxes]);
     }
 }

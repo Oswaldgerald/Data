@@ -17,31 +17,40 @@
                                         No
                                     </th>
                                     <th>
-                                        Activity
+                                        stan
                                     </th>
                                     <th>
-                                        Done by
+                                        Card_no
                                     </th>
                                     <th>
-                                        Date Time Logged
+                                        Amount
                                     </th>
-
+                                    <th>
+                                        Terminal_Id
+                                    </th>
+                                    <th>
+                                        Charge
+                                    </th>
+                                    <th>
+                                        Account_no
+                                    </th>
+                                    <th>
+                                        rrn
+                                    </th>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>
-                                            Sheet 1 Upload
-                                        </td>
-                                        <td>
-                                            Oswald John
-                                        </td>
-                                        <td>
-                                            Fri, 16 May 2015 05:50:06 GMT
-                                        </td>
-                                    </tr>
+                                    @foreach(\App\Models\BCX::all() as $bcx)
+                                        <tr>
+                                            <th>{{ $bcx->id}}</th>
+                                            <th>{{ $bcx->stan}}</th>
+                                            <th>{{ $bcx->Card_no}}</th>
+                                            <th>{{ $bcx->Amount}}</th>
+                                            <th>{{ $bcx->Terminal_id}}</th>
+                                            <th>{{ $bcx->Charge}}</th>
+                                            <th>{{ $bcx->Account_no}}</th>
+                                            <th>{{ $bcx->rrn}}</th>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>
