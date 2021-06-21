@@ -4,6 +4,7 @@
     <list default="true" id="5dfa10f8-e443-4baf-94b0-b76341b06cd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BCXController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BCXController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/history.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/transaction_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transaction_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/upload.blade.php" afterDir="false" />
@@ -157,12 +158,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\anjela\resources\views" />
       <recent name="C:\xampp\htdocs\anjela" />
       <recent name="C:\xampp\htdocs\example\app\Http\Controllers" />
     </key>
@@ -210,7 +212,7 @@
       <workItem from="1623572332442" duration="5909000" />
       <workItem from="1624183988914" duration="431000" />
       <workItem from="1624185389361" duration="7630000" />
-      <workItem from="1624295705803" duration="6511000" />
+      <workItem from="1624295705803" duration="14924000" />
     </task>
     <servers />
   </component>

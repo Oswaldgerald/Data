@@ -26,6 +26,33 @@ class TransactionController extends Controller
         return View('transaction_list')->with('transactions', $transactions);
     }
 
+    public function show_totalSettlement()
+    {
+
+        $totalSettlement = transaction::all();
+
+        // load the view and pass the transactions
+        return View('totalSettlement_list')->with('transactions', $totalSettlement);
+    }
+
+    public function show_brNotBcx()
+    {
+
+        $brNotBcx = transaction::all();
+
+        // load the view and pass the transactions
+        return View('brNotBcx_list')->with('transactions', $brNotBcx);
+    }
+
+    public function show_bcxNotBr()
+    {
+
+        $bcxNotBr = transaction::all();
+
+        // load the view and pass the transactions
+        return View('bcxNotBr_list')->with('transactions', $bcxNotBr);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

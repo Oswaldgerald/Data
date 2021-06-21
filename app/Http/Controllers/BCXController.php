@@ -39,7 +39,9 @@ class BCXController extends Controller
 
     public function getBCXData()
     {
+
         $bcxes = DB::table('b_c_x_e_s')->get();
         return view('upload', ['bcxes' => $bcxes]);
     }
 }
+

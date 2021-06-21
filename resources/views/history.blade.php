@@ -48,7 +48,7 @@
                                             <th>{{ $bcx->Terminal_id}}</th>
                                             <th>{{ $bcx->Charge}}</th>
                                             <th>{{ $bcx->Account_no}}</th>
-                                            <th>{{ $bcx->rrn}}</th>
+                                            <th class="btn-outline-success">{{ $bcx->rrn}}</th>
                                         </tr>
                                     @endforeach
                                     </tbody>
