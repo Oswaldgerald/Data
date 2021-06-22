@@ -39,16 +39,19 @@
                                     </th>
                                     </thead>
                                     <tbody>
-                                    @foreach(\App\Models\BCX::all() as $bcx)
+                                    <?php
+                                    use App\Models\b_c_x_e_s;
+                                    use App\Models\GeneralLedger;
+
+                                    $bcxes = b_c_x_e_s::get();
+                                    foreach ($bcxes as $bcx) {
+                                        $general = GeneralLedger::where('trxDescription', 'LIKE', '%' . $bcx->stan . '%')->get();
+                                    }
+                                    ?>
+                                    @foreach($general as $bcx )
                                         <tr>
                                             <th>{{ $bcx->id}}</th>
-                                            <th>{{ $bcx->stan}}</th>
-                                            <th>{{ $bcx->Card_no}}</th>
-                                            <th>{{ $bcx->Amount}}</th>
-                                            <th>{{ $bcx->Terminal_id}}</th>
-                                            <th>{{ $bcx->Charge}}</th>
-                                            <th>{{ $bcx->Account_no}}</th>
-                                            <th class="btn-outline-success">{{ $bcx->rrn}}</th>
+                                            <th>{{ $bcx->trxDescription}}</th>
                                         </tr>
                                     @endforeach
                                     </tbody>

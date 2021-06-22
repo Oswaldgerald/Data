@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\GeneralLedger;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -40,8 +41,12 @@ class BCXController extends Controller
     public function getBCXData()
     {
 
-        $bcxes = DB::table('b_c_x_e_s')->get();
-        return view('upload', ['bcxes' => $bcxes]);
+//        $bcxes = b_c_x_e_s::get();
+//        foreach ($bcxes as $bcx){
+//            $general = GeneralLedger::where('trxDescription','LIKE','%'.$bcx->stan.'%')->get();
+//        }
+//        return view('history');
     }
 }
+
 
