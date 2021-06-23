@@ -42,18 +42,26 @@
                                     <?php
                                     use App\Models\b_c_x_e_s;
                                     use App\Models\GeneralLedger;
-
                                     $bcxes = b_c_x_e_s::get();
-                                    foreach ($bcxes as $bcx) {
-                                        $general = GeneralLedger::where('trxDescription', 'LIKE', '%' . $bcx->stan . '%')->get();
-                                    }
+                                    $total_amount = 0;
                                     ?>
-                                    @foreach($general as $bcx )
-                                        <tr>
-                                            <th>{{ $bcx->id}}</th>
-                                            <th>{{ $bcx->trxDescription}}</th>
-                                        </tr>
+                                    @foreach ($bcxes as $bcx1)
+                                        <?php
+                                        $general = GeneralLedger::where('trxDescription', 'LIKE', '%' . $bcx1->stan . '%')->get();
+                                        ?>
+                                        @foreach($general as $bcx )
+                                            <?php $total_amount += $bcx1->Amount; ?>
+                                            <tr>
+                                                <th>{{ $bcx->id}}</th>
+                                                <th>{{ $bcx->trxDescription}}</th>
+                                                <th>{{ $total_amount}}</th>
+
+                                            </tr>
+
+                                        @endforeach
+
                                     @endforeach
+
                                     </tbody>
                                 </table>
                             </div>
